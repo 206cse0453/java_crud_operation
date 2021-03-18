@@ -1,0 +1,12 @@
+.container-fluid
+{
+	background-color: black;
+}
+.navbar-default
+{
+	width: 100%;
+}
+#navbar-nav
+{
+	padding-left: 1000px;
+}

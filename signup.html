@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signup page</title>
+<script>
+function validateForm() {
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+</script>
+
+</head>
+<body>
+<center> 
+	<form name="myForm" onsubmit="return validateForm()" method="post">
+		<h1>Student SignUp</h1>   
+            <label>Name</label>   
+            <input type="text" placeholder="Enter Name" name="fname" required><br><br>
+            <label>Username</label>  
+            <input type="text" placeholder="Enter Username" name="username" required><br><br>   
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required><br><br>     
+            <!-- <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>-->
+        <button type="submit">signup</button>
+        </div>
+    </form>
+</center>     
+</body>
+</html>
